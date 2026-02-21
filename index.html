@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradition Look | Haute Couture</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --rouge: #800000; --or: #D4AF37; --blanc: #ffffff; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Montserrat', sans-serif; background: var(--blanc); color: #1a1a1a; line-height: 1.6; }
+        
+        header { padding: 25px; text-align: center; background: white; border-bottom: 3px solid var(--rouge); position: sticky; top: 0; z-index: 1000; }
+        .logo { font-family: 'Cinzel', serif; font-size: 2.2rem; letter-spacing: 5px; color: var(--rouge); text-transform: uppercase; }
+
+        .hero { 
+            height: 60vh; 
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('caftan-velours.jpg.jpg.jpeg') center/cover;
+            display: flex; align-items: center; justify-content: center; color: white; text-align: center;
+        }
+        .hero h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; border-bottom: 3px solid var(--or); padding-bottom: 10px; }
+
+        .story { padding: 80px 15%; text-align: center; background: #fdfaf5; }
+        .story h2 { font-family: 'Cinzel', serif; color: var(--rouge); margin-bottom: 25px; font-size: 2rem; }
+        .story p { max-width: 800px; margin: 0 auto; font-size: 1.15rem; color: #444; border-left: 4px solid var(--or); padding-left: 20px; text-align: justify; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; padding: 60px 50px; }
+        .card { background: white; border: 1px solid #eee; transition: 0.4s; overflow: hidden; text-align: center; padding-bottom: 30px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-radius: 8px; }
+        .card:hover { transform: translateY(-10px); }
+        .card img { width: 100%; height: 500px; object-fit: cover; border-bottom: 3px solid var(--or); }
+        .card h3 { margin: 25px 0 15px; font-family: 'Cinzel', serif; color: var(--rouge); font-size: 1.2rem; letter-spacing: 1px; }
+        
+        .wa-btn { 
+            display: inline-block; padding: 12px 30px; background: #25D366; color: white; 
+            text-decoration: none; border-radius: 50px; font-weight: 600; transition: 0.3s; font-size: 0.85rem;
+        }
+        .wa-btn:hover { background: #128C7E; box-shadow: 0 5px 15px rgba(37,211,102,0.4); }
+
+        .contact { background: #1a1a1a; color: white; padding: 80px 10%; text-align: center; }
+        .contact h2 { font-family: 'Cinzel', serif; margin-bottom: 40px; color: var(--or); }
+        form { max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+        input, select { padding: 18px; border-radius: 5px; border: 1px solid #333; background: #222; color: white; font-size: 1rem; }
+        .submit-btn { background: var(--or); color: black; font-weight: 800; cursor: pointer; padding: 18px; border: none; border-radius: 5px; text-transform: uppercase; transition: 0.3s; }
+        .submit-btn:hover { background: white; }
+
+        footer { padding: 50px; text-align: center; font-size: 0.9rem; color: #888; background: #fff; border-top: 1px solid #eee; }
+    </style>
+</head>
+<body>
+
+    <header><div class="logo">Tradition Look</div></header>
+
+    <section class="hero">
+        <h1>Élégance Royale</h1>
+    </section>
+
+    <section class="story">
+        <h2>L'Héritage du Luxe</h2>
+        <p>
+            <strong>Tradition Look</strong> est spécialisé dans les tenues traditionnelles marocaines, 
+            notamment le caftan et la takchita. Nous proposons des modèles élégants adaptés 
+            à toutes les occasions, avec une qualité qui allie tradition et modernité.
+        </p>
+    </section>
+
+    <div class="grid">
+        <div class="card">
+            <img src="caftan-velours.jpg.jpg.jpeg" alt="Caftan Velours">
+            <h3>Majesté Velours</h3>
+            <a href="https://wa.me/212647636451?text=Je suis intéressée par le Caftan Velours" class="wa-btn">CONTACTER SUR WHATSAPP</a>
+        </div>
+
+        <div class="card">
+            <img src="caftan-beige.jpg.jpg.jpeg" alt="Caftan Beige">
+            <h3>Satin de Soie Beige</h3>
+            <a href="https://wa.me/212647636451?text=Je suis intéressée par le Caftan Beige" class="wa-btn">CONTACTER SUR WHATSAPP</a>
+        </div>
+
+        <div class="card">
+            <img src="caftan-creme.jpg.jpg.jpeg" alt="Caftan Crème">
+            <h3>L'Éclat Crème</h3>
+            <a href="https://wa.me/212647636451?text=Je suis intéressée par le Caftan Crème" class="wa-btn">CONTACTER SUR WHATSAPP</a>
+        </div>
+
+        <div class="card">
+            <img src="caftan-marron.jpg.jpg.jpeg" alt="Caftan Marron">
+            <h3>Terre d'Orient</h3>
+            <a href="https://wa.me/212647636451?text=Je suis intéressée par le Caftan Marron" class="wa-btn">CONTACTER SUR WHATSAPP</a>
+        </div>
+
+        <div class="card">
+            <img src="caftan-lilas.jpg.jpg.jpeg" alt="Caftan Lilas">
+            <h3>Lilas Impérial</h3>
+            <a href="https://wa.me/212647636451?text=Je suis intéressée par le Caftan Lilas" class="wa-btn">CONTACTER SUR WHATSAPP</a>
+        </div>
+    </div>
+
+    <section class="contact">
+        <h2>Demande de Réservation</h2>
+        <form id="waForm">
+            <input type="text" id="nom" placeholder="VOTRE NOM COMPLET" required>
+            <input type="tel" id="tel" placeholder="VOTRE NUMÉRO" required>
+            <select id="choix">
+                <option value="Location">LOCATION</option>
+                <option value="Achat Prestige">ACHAT PRESTIGE</option>
+            </select>
+            <button type="submit" class="submit-btn">ENVOYER LA DEMANDE</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 TRADITION LOOK - 06 47 63 64 51</p>
+        <p>Expertise en Caftan et Takchita</p>
+    </footer>
+
+    <script>
+        document.getElementById('waForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const nom = document.getElementById('nom').value;
+            const choix = document.getElementById('choix').value;
+            const msg = `Bonjour Tradition Look, je suis ${nom}. Je souhaite une ${choix} pour une tenue traditionnelle.`;
+            window.location.href = `https://wa.me/212647636451?text=${encodeURIComponent(msg)}`;
+        });
+    </script>
+</body>
+</html>
